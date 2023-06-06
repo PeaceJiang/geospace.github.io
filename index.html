@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://PeaceJiang.github.io/project/"/>
+  <link rel="canonical" href="https://PeaceJiang.github.io/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -27,7 +27,7 @@
   <!-- Custom Files headBegin end-->
   <!-- front-matter head_begin begin -->
   <!-- front-matter head_begin end -->
-  <link rel="preload" href="/project/css/style.css" as="style">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -39,7 +39,7 @@
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="Peace Jiang&#39;s Blog">
-<meta property="og:url" content="https://peacejiang.github.io/project/index.html">
+<meta property="og:url" content="https://peacejiang.github.io/index.html">
 <meta property="og:site_name" content="Peace Jiang&#39;s Blog">
 <meta property="og:description" content="少年回头望 笑我还不快更上">
 <meta property="og:locale" content="zh_CN">
@@ -712,6 +712,103 @@ button {
   -webkit-opacity: 1;
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
+}
+.cover-wrapper.dock .menu,
+.cover-wrapper.featured .menu,
+.cover-wrapper.focus .menu {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.cover-wrapper.dock .menu .list-h a,
+.cover-wrapper.featured .menu .list-h a,
+.cover-wrapper.focus .menu .list-h a {
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  line-height: 24px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-bottom: none;
+  text-align: center;
+  align-content: flex-end;
+  color: rgba(68,68,68,0.7);
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper.dock .menu .list-h a,
+  .cover-wrapper.featured .menu .list-h a,
+  .cover-wrapper.focus .menu .list-h a {
+    padding: 12px 8px;
+  }
+}
+.cover-wrapper.dock .menu .list-h a i,
+.cover-wrapper.featured .menu .list-h a i,
+.cover-wrapper.focus .menu .list-h a i {
+  margin: 8px;
+}
+.cover-wrapper.dock .menu .list-h a p,
+.cover-wrapper.featured .menu .list-h a p,
+.cover-wrapper.focus .menu .list-h a p {
+  font-size: 0.875rem;
+}
+.cover-wrapper.dock .menu .list-h a.active,
+.cover-wrapper.featured .menu .list-h a.active,
+.cover-wrapper.focus .menu .list-h a.active {
+  background: var(--color-card);
+  backdrop-filter: none;
+}
+.cover-wrapper.dock .menu .list-h a.active i,
+.cover-wrapper.featured .menu .list-h a.active i,
+.cover-wrapper.focus .menu .list-h a.active i,
+.cover-wrapper.dock .menu .list-h a.active i+p,
+.cover-wrapper.featured .menu .list-h a.active i+p,
+.cover-wrapper.focus .menu .list-h a.active i+p {
+  color: #44d7b6;
+}
+.cover-wrapper.dock .menu .list-h a.active img+p,
+.cover-wrapper.featured .menu .list-h a.active img+p,
+.cover-wrapper.focus .menu .list-h a.active img+p {
+  color: var(--color-text);
+}
+.cover-wrapper.dock .menu .list-h a:hover,
+.cover-wrapper.featured .menu .list-h a:hover,
+.cover-wrapper.focus .menu .list-h a:hover {
+  background: var(--color-card);
+}
+.cover-wrapper.focus .menu {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.cover-wrapper.focus .menu .list-h {
+  margin: 2px;
+}
+.cover-wrapper.focus .menu:hover {
+  background: rgba(255,255,255,0.5);
+}
+@supports (backdrop-filter: blur(20px)) {
+  .cover-wrapper.focus .menu:hover {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: saturate(200%) blur(20px);
+  }
+}
+.cover-wrapper.focus .menu .list-h a {
+  margin: 2px;
+}
+.cover-wrapper.focus .menu .list-h a:hover {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  background: var(--color-card);
 }
 @font-face {
   font-family: 'UbuntuMono';
@@ -1551,8 +1648,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/project/css/style.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/project/css/style.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1624,9 +1721,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: "env",
-    cdn: {"js":{"app":"/project/js/app.js","parallax":"/project/js/plugins/parallax.js","rightMenu":"/project/js/plugins/rightMenu.js","rightMenus":"/project/js/plugins/rightMenus.js","sites":"/project/js/plugins/tags/sites.js","friends":"/project/js/plugins/tags/friends.js","contributors":"/project/js/plugins/tags/contributors.js","search":"/project/js/search/hexo.js"},"css":{"style":"/project/css/style.css"}},
+    cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1686038206146),
+    lastupdate: new Date(1686041907791),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2074,7 +2171,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		<div class="nav-main">
       
         
-        <a class="title flat-box" target="_self" href='/project/'>
+        <a class="title flat-box" target="_self" href='/'>
           
             <img no-lazy class='logo' src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/Logo-NavBar@3x.png'/>
           
@@ -2092,11 +2189,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/project/" title="博客"
+                href="/" title="博客"
                   
                   
                   
-                    active-action="action-project"
+                    active-action="action-home"
                   >
                   <i class='fa-solid fa-rss fa-fw'></i>博客
                 </a>
@@ -2109,11 +2206,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/project/categories/" title="分类"
+                href="/categories/" title="分类"
                   
                   
                   
-                    active-action="action-projectcategories"
+                    active-action="action-categories"
                   >
                   <i class='fa-solid fa-folder-open fa-fw'></i>分类
                 </a>
@@ -2126,11 +2223,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/project/tags/" title="标签"
+                href="/tags/" title="标签"
                   
                   
                   
-                    active-action="action-projecttags"
+                    active-action="action-tags"
                   >
                   <i class='fa-solid fa-tags fa-fw'></i>标签
                 </a>
@@ -2143,11 +2240,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/project/archives/" title="归档"
+                href="/archives/" title="归档"
                   
                   
                   
-                    active-action="action-projectarchives"
+                    active-action="action-archives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
                 </a>
@@ -2160,11 +2257,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/project/friends/" title="友链"
+                href="/friends/" title="友链"
                   
                   
                   
-                    active-action="action-projectfriends"
+                    active-action="action-friends"
                   >
                   <i class='fa-solid fa-link fa-fw'></i>友链
                 </a>
@@ -2177,11 +2274,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/project/about/" title="关于"
+                href="/about/" title="关于"
                   
                   
                   
-                    active-action="action-projectabout"
+                    active-action="action-about"
                   >
                   <i class='fa-solid fa-info-circle fa-fw'></i>关于
                 </a>
@@ -2213,11 +2310,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/project/" title="博客"
+                href="/" title="博客"
                   
                   
                   
-                    active-action="action-project"
+                    active-action="action-home"
                   >
                   <i class='fa-solid fa-rss fa-fw'></i>博客
                 </a>
@@ -2230,11 +2327,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/project/categories/" title="分类"
+                href="/categories/" title="分类"
                   
                   
                   
-                    active-action="action-projectcategories"
+                    active-action="action-categories"
                   >
                   <i class='fa-solid fa-folder-open fa-fw'></i>分类
                 </a>
@@ -2247,11 +2344,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/project/tags/" title="标签"
+                href="/tags/" title="标签"
                   
                   
                   
-                    active-action="action-projecttags"
+                    active-action="action-tags"
                   >
                   <i class='fa-solid fa-tags fa-fw'></i>标签
                 </a>
@@ -2264,11 +2361,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/project/archives/" title="归档"
+                href="/archives/" title="归档"
                   
                   
                   
-                    active-action="action-projectarchives"
+                    active-action="action-archives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
                 </a>
@@ -2281,11 +2378,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/project/friends/" title="友链"
+                href="/friends/" title="友链"
                   
                   
                   
-                    active-action="action-projectfriends"
+                    active-action="action-friends"
                   >
                   <i class='fa-solid fa-link fa-fw'></i>友链
                 </a>
@@ -2298,11 +2395,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/project/about/" title="关于"
+                href="/about/" title="关于"
                   
                   
                   
-                    active-action="action-projectabout"
+                    active-action="action-about"
                   >
                   <i class='fa-solid fa-info-circle fa-fw'></i>关于
                 </a>
@@ -2328,12 +2425,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="full" class='cover-wrapper  search' style="display: ;">
+      <div id="full" class='cover-wrapper  focus' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://bing.ioliu.cn/v1/rand?w=1920&h=1200"></div>
 
 <div class='cover-body'>
   <div class='top'>
+    
+      <img no-lazy class='logo' src='https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png'/>
     
     
       <p class="title">南河三</p>
@@ -2343,36 +2442,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   </div>
   <div class='bottom'>
-    
-      <div class="m_search">
-        <form name="searchform" class="form u-search-form">
-          <input type="text" class="input u-search-input" placeholder="搜一下" />
-          <i class="icon fa-solid fa-search fa-fw"></i>
-        </form>
-      </div>
-    
     <div class='menu navigation'>
       <div class='list-h'>
         
           
-            <a href="/project/"
+            <a href="/"
               
               
-              active-action="action-project">
+              active-action="action-home">
               <p>主页</p>
             </a>
           
-            <a href="/project/tags/"
+            <a href="/tags/"
               
               
-              active-action="action-projecttags">
+              active-action="action-tags">
               <p>标签</p>
             </a>
           
-            <a href="/project/categories/"
+            <a href="/categories/"
               
               
-              active-action="action-projectcategories">
+              active-action="action-categories">
               <p>分类</p>
             </a>
           
@@ -2415,7 +2506,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://peacejiang.github.io/project/2023/04/22/test-site/">
+  <link itemprop="mainEntityOfPage" href="https://peacejiang.github.io/2023/04/22/test-site/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Peace Jiang's Blog">
   </span>
@@ -2433,7 +2524,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/project/2023/04/22/test-site/"  itemprop="url">
+      <a href="/2023/04/22/test-site/"  itemprop="url">
         test_site
       </a>
     </h2>
@@ -2456,7 +2547,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <a class='avatar' href='/'><img src='https://beta.glilmu.com/i/2022/12/05/1xv9ka.png'></a>
           <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
             <meta itemprop="image" content="https://beta.glilmu.com/i/2022/12/05/1xv9ka.png">
-            <meta itemprop="name" content="MengFanjun">
+            <meta itemprop="name" content="南河三">
             <meta itemprop="url" content="/">
           </span>
         
@@ -2465,7 +2556,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </div>
       
         <div>
-          <a class='readmore' href='/project/2023/04/22/test-site/' itemprop="url">
+          <a class='readmore' href='/2023/04/22/test-site/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2547,6 +2638,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
+  
+  <section class="widget tagcloud desktop mobile pjax">
+    
+  <header>
+    
+      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/%E6%B5%8B%E8%AF%95-%E8%B0%83%E6%95%B4/" style="font-size: 14px; color: #999">测试 调整</a>
+    </div>
+  </section>
+
 
     
   
@@ -2629,7 +2735,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/project/2023/04/22/test-site/"><div class="item"><time>2023-06-04</time></div><span>test_site</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2023/04/22/test-site/"><div class="item"><time>2023-06-06</time></div><span>test_site</span></a></li></ul>
   </div>
 </section>
 
@@ -2734,7 +2840,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="social-wrapper" itemprop="about" itemscope itemtype="http://schema.org/Thing">
           
             
-              <a href="/project/atom.xml"
+              <a href="/atom.xml"
                 class="social fas fa-rss flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer" itemprop="url">
@@ -2820,7 +2926,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/project/project/js/app.js"></script>
+<script src="/js/app.js"></script>
 
 
 
@@ -2836,19 +2942,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/project/js/plugins/tags/sites.js")
+        volantis.js("/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/project/js/plugins/tags/friends.js")
+        volantis.js("/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/project/js/plugins/tags/contributors.js")
+        volantis.js("/js/plugins/tags/contributors.js")
       }
     
   };
@@ -3043,14 +3149,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <!-- optional -->
 
   <script>
-  const SearchServiceDataPathRoot = ("/project/" || "/").endsWith("/") ?
-    "/project/" || "/" :
-    "/project//" || "/";
+  const SearchServiceDataPathRoot = ("/" || "/").endsWith("/") ?
+    "/" || "/" :
+    "//" || "/";
   const SearchServiceDataPath = SearchServiceDataPathRoot + "content.json";
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/project/js/search/hexo.js");
+    return volantis.js("/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -3299,7 +3405,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Peace Jiang's Blog","url":"https://PeaceJiang.github.io/project/project/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Peace Jiang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/project/project/","sameAs":["https://github.com/volantis-x"],"description":"少年回头望 笑我还不快更上"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://PeaceJiang.github.io/project/project/","name":"Peace Jiang's Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Peace Jiang's Blog","url":"https://PeaceJiang.github.io/project/project/","keywords":null,"description":"少年回头望 笑我还不快更上","author":{"@type":"Person","name":"Peace Jiang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/project/project/","description":"少年回头望 笑我还不快更上"},"publisher":{"@type":"Organization","name":"Peace Jiang's Blog","url":"https://PeaceJiang.github.io/project/project/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://PeaceJiang.github.io/project?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"少年回头望 笑我还不快更上","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Peace Jiang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/project/project/"},"publisher":{"@type":"Organization","name":"Peace Jiang's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Peace Jiang's Blog","url":"https://PeaceJiang.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Peace Jiang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/","sameAs":["https://github.com/volantis-x"],"description":"少年回头望 笑我还不快更上"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://PeaceJiang.github.io/","name":"Peace Jiang's Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Peace Jiang's Blog","url":"https://PeaceJiang.github.io/","keywords":null,"description":"少年回头望 笑我还不快更上","author":{"@type":"Person","name":"Peace Jiang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/","description":"少年回头望 笑我还不快更上"},"publisher":{"@type":"Organization","name":"Peace Jiang's Blog","url":"https://PeaceJiang.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://PeaceJiang.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"少年回头望 笑我还不快更上","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Peace Jiang","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/"},"publisher":{"@type":"Organization","name":"Peace Jiang's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
