@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://PeaceJiang.github.io/"/>
+  
+  <link rel="canonical" href="https://PeaceJiang.github.io/2023/08/08/sql第一章：ddl数据定义语言/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,18 +35,21 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="舆地纪要" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>舆地纪要</title>
-  <meta name="keywords" content="">
-  <meta desc name="description" content="从地表的痕迹去摸索时空的演化 - 南河三 - 舆地纪要">
+  <title>SQL第一章：DDL数据定义语言 - 舆地纪要</title>
+  <meta name="keywords" content="SQL笔记,null">
+  <meta desc name="description" content="数据定义语言（DDL）：Data Definition Language，用来定义数据库的对象，如数据表、视图、索引等。 - 南河三 - 舆地纪要">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="舆地纪要">
-<meta property="og:url" content="https://peacejiang.github.io/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SQL第一章：DDL数据定义语言">
+<meta property="og:url" content="https://peacejiang.github.io/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/index.html">
 <meta property="og:site_name" content="舆地纪要">
-<meta property="og:description" content="从地表的痕迹去摸索时空的演化">
+<meta property="og:description" content="数据定义语言（DDL）：Data Definition Language，用来定义数据库的对象，如数据表、视图、索引等。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-08-08T15:33:54.000Z">
+<meta property="article:modified_time" content="2023-08-08T15:40:59.397Z">
 <meta property="article:author" content="南河三">
+<meta property="article:tag" content="SQL笔记">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2223,7 +2226,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2288,7 +2291,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2681,107 +2684,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div id="l_body">
       <div id="l_cover">
   
-    
-      <div class="cover-wrapper  focus" id='full'>
-        
-  <div id="parallax-window"></div>
-
-<div class='cover-body'>
-  <div class='top'>
-    
-      <img no-lazy class='logo' src='/img/%E5%9B%BE%E6%A0%87.png'/>
-    
-    
-      <p class="title">舆 地 纪 要</p>
-    
-    
-      <p class="subtitle">寓形宇内复几时 曷不委心任去留</p>
-    
-  </div>
-  <div class='bottom'>
-    <div class='menu navigation'>
-      <div class='list-h'>
-        
-          
-            <a href="/"
-              
-              
-              active-action="action-home">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f4d6.svg'><p>主页</p>
-            </a>
-          
-            <a href="/categories/"
-              
-              
-              active-action="action-categories">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f5c3.svg'><p>分类</p>
-            </a>
-          
-            <a href="/tags/"
-              
-              
-              active-action="action-tags">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f3f7.svg'><p>标签</p>
-            </a>
-          
-            <a href="/about/"
-              
-              
-              active-action="action-about">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f497.svg'><p>关于</p>
-            </a>
-          
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-        <div id="scroll-down"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
-      </div>
-    
-  
 </div>
 
       <div id="safearea">
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://peacejiang.github.io/2023/08/08/SQL第一章：DDL数据定义语言/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="舆地纪要">
@@ -2791,300 +2700,315 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="从地表的痕迹去摸索时空的演化">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         SQL第一章：DDL数据定义语言
-      </a>
-    </h2>
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">南河三</p>
+  </a>
+</div>
+
+          
+        
+          
+            
   
-  <div class='md article-desc' itemprop="articleBody">
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a><span class="sep"></span><a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/">SQL</a>
     
-      <p>数据定义语言（DDL）：Data Definition Language，用来定义数据库的对象，如数据表、视图、索引等。</p>
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url"><span itemprop="name">计算机</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/" itemprop="url"><span itemprop="name">SQL</span></a>
+      </span>
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg">
-            <meta itemprop="name" content="南河三">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-08T23:33:54+08:00">2023-08-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a><span class="sep"></span><a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/">SQL</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url"><span itemprop="name">计算机</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/" itemprop="url"><span itemprop="name">SQL</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-08T23:33:54+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年8月8日</p>
+  </a>
 </div>
 
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-08T23:40:59+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年8月8日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：579 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：2 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span data-path="/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/" class="waline-pageview-count">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>数据定义语言（DDL）：Data Definition Language，用来定义数据库的对象，如数据表、视图、索引等。</p>
+<span id="more"></span>
+
+<h3 id="数据库的增删改查、使用"><a href="#数据库的增删改查、使用" class="headerlink" title="数据库的增删改查、使用"></a>数据库的增删改查、使用</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"># 创建数据库</span><br><span class="line"><span class="keyword">CREATE</span> DATABASE mydb1;</span><br><span class="line"><span class="keyword">CREATE</span> DATABASE IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> mydb2;</span><br><span class="line"># 创建指定字符集的数据库</span><br><span class="line"><span class="keyword">CREATE</span> DATABASE mydb3 <span class="type">CHARACTER</span> <span class="keyword">SET</span> UTF8;</span><br><span class="line"><span class="keyword">CREATE</span> DATABASE IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> mydb2 <span class="keyword">SET</span> UTF8;</span><br><span class="line"><span class="comment">/*针对不同字符集，MySQL指定了不同的排序规则（可以参考MySQL的帮助文档）。</span></span><br><span class="line"><span class="comment">例如：utf8字符集中指定的 utf8_general_ci 和 utf8_bin，对数据库中存储数据库的规则就有所不同。</span></span><br><span class="line"><span class="comment">      utf8_general_ci：ci是 case insensitive, 即 &quot;大小写不敏感&quot;, a 和 A 会在字符判断中会被当做一样的。</span></span><br><span class="line"><span class="comment">      utf8_bin：将字符串每个字符串用二进制数据编译存储，区分大小写，而且可以存二进制的内容。*/</span></span><br><span class="line"></span><br><span class="line"># 查询数据库</span><br><span class="line"><span class="keyword">SHOW</span> databases; # 查询所有数据库</span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">CREATE</span> DATABASE mydb3; # 查看指定数据库</span><br><span class="line"></span><br><span class="line"># 修改数据库。只能修改数据库的字符集和排序规则，不能修改数据库名字</span><br><span class="line"><span class="keyword">ALTER</span> DATABASE mydb3 <span class="type">CHARACTER</span> <span class="keyword">SET</span> gbk <span class="keyword">COLLATE</span> gbk_bin;</span><br><span class="line"></span><br><span class="line"># 删除数据库</span><br><span class="line"><span class="keyword">DROP</span> DATABASE mydb3;</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> DATABASE(); # 查看正在使用的数据库</span><br><span class="line">USE mydb1; # 使用规定的数据库</span><br></pre></td></tr></table></figure>
+
+<h3 id="操作表的DDL"><a href="#操作表的DDL" class="headerlink" title="操作表的DDL"></a>操作表的DDL</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"># 创建表</span><br><span class="line"><span class="comment">/*注意：在创建表之前，一定要先使用数据库（也就是说，表一定要创建在某个数据库中）*/</span></span><br><span class="line"># <span class="keyword">CREATE</span> <span class="keyword">TABLE</span> 表名 (字段名<span class="number">1</span> 数据类型,字段名<span class="number">2</span> 数据类型,…,字段名n 数据类型)</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> student (</span><br><span class="line">      id <span class="type">INT</span>,</span><br><span class="line">      name <span class="type">VARCHAR</span>(<span class="number">20</span>),</span><br><span class="line">      birthday <span class="type">date</span></span><br><span class="line">    ); # 创建student表包含id,name,age,sex字段</span><br><span class="line"></span><br><span class="line"># 查看表</span><br><span class="line"><span class="keyword">SHOW</span> tables; # 查看所有表</span><br><span class="line"><span class="keyword">DESC</span> student; # 查看表结构</span><br><span class="line"><span class="keyword">describe</span> student; # 查看表结构</span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">CREATE</span> <span class="keyword">TABLE</span> student; # 查看创建表的语句</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> s1 <span class="keyword">LIKE</span> student; # 复制表结构，复制与student相同结构的s1表</span><br><span class="line"></span><br><span class="line"># 修改表名</span><br><span class="line">RENAME <span class="keyword">TABLE</span> s1 <span class="keyword">TO</span> st1; # RENAME <span class="keyword">TABLE</span> 表名 <span class="keyword">TO</span> 新表名</span><br><span class="line"></span><br><span class="line"># 修改编码方式</span><br><span class="line">	<span class="keyword">ALTER</span> <span class="keyword">TABLE</span> st1 <span class="type">CHARACTER</span> <span class="keyword">SET</span> gbk; # <span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="type">character</span> <span class="keyword">set</span> 字符集</span><br><span class="line"></span><br><span class="line"># 删除表</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> st1;</span><br></pre></td></tr></table></figure>
+
+<h3 id="表单中的列操作"><a href="#表单中的列操作" class="headerlink" title="表单中的列操作"></a>表单中的列操作</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 添加列</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> s1 <span class="keyword">ADD</span> remark <span class="type">VARCHAR</span>(<span class="number">20</span>); # <span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">ADD</span> 列名 类型</span><br><span class="line"></span><br><span class="line"># 修改列类型</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> s1 MODIFY remark <span class="type">VARCHAR</span>(<span class="number">100</span>); # <span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 MODIFY 列名 新的类型</span><br><span class="line"></span><br><span class="line"># 修改列名</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> s1 CHANGE remark intro <span class="type">varchar</span>(<span class="number">30</span>); # <span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 CHANGE 旧列名 新列名 类型</span><br><span class="line"></span><br><span class="line"># 删除列</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> s1 <span class="keyword">DROP</span> intro; # <span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">DROP</span> 列名</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+        
+      
+      <!-- 版权声明组件 -->
+      
+        
+          
+          <div class="copyright license">
+            <div class="license-title">SQL第一章：DDL数据定义语言</div>
+            <div class="license-link"><a href="https://peacejiang.github.io/2023/08/08/SQL第一章：DDL数据定义语言/">https://peacejiang.github.io/2023/08/08/SQL第一章：DDL数据定义语言/</a>
+            </div>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">南河三</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2023年8月8日</div>
+              </div>
+              
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh#" target="_blank">CC BY-NC-SA 4.0</a></div>
+              </div>
+            </div>
+            <div class="license-statement">博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</div>
           </div>
         
       
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://peacejiang.github.io/2023/06/25/VSCode与ArcGIS的结合/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="舆地纪要">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="舆地纪要">
-    <meta itemprop="description" content="从地表的痕迹去摸索时空的演化">
-  </span>
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-08T23:40:59+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年8月8日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
   
   
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SQL%E7%AC%94%E8%AE%B0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>SQL笔记</p></a></div>
+  <span hidden itemprop="keywords">SQL笔记</span>
+  
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://peacejiang.github.io/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/&title=SQL第一章：DDL数据定义语言 - 舆地纪要&summary=数据定义语言（DDL）：Data Definition Language，用来定义数据库的对象，如数据表、视图、索引等。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://peacejiang.github.io/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/&title=SQL第一章：DDL数据定义语言 - 舆地纪要&summary=数据定义语言（DDL）：Data Definition Language，用来定义数据库的对象，如数据表、视图、索引等。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://peacejiang.github.io/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/&title=SQL第一章：DDL数据定义语言 - 舆地纪要&summary=数据定义语言（DDL）：Data Definition Language，用来定义数据库的对象，如数据表、视图、索引等。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://peacejiang.github.io/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/&text=SQL第一章：DDL数据定义语言 - 舆地纪要"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/06/25/VSCode%E4%B8%8EArcGIS%E7%9A%84%E7%BB%93%E5%90%88/'>
+          <p class='title'>VSCode与ArcGIS的结合<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>前言ArcGIS是常用的GIS桌面软件，其自带的arcpy包是使用Python开发常用的闭源站点包，因此若要使用arcpy则必须使用ArcGIS自带的python解释器。在ArcGIS for ...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/06/25/VSCode%E4%B8%8EArcGIS%E7%9A%84%E7%BB%93%E5%90%88/"  itemprop="url">
-        VSCode与ArcGIS的结合
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        前言ArcGIS是常用的GIS桌面软件，其自带的arcpy包是使用Python开发常用的闭源站点包，因此若要使用arcpy则必须使用ArcGIS自带的python解释器。在ArcGIS for desktop中，ArcMap的python版本为2.7，为python2系列。随着新一代桌面端GIS软件ArcGIS Pro的推出，python3也以conda虚拟环境的形式结合到Pro中，本文介绍...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg">
-            <meta itemprop="name" content="南河三">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-06-25T14:01:53+08:00">2023-06-25</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/3S%E6%8A%80%E6%9C%AF/">3S技术</a><span class="sep"></span><a class="category-link" href="/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/">GIS软件应用</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/3S%E6%8A%80%E6%9C%AF/" itemprop="url"><span itemprop="name">3S技术</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/" itemprop="url"><span itemprop="name">GIS软件应用</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/06/25/VSCode%E4%B8%8EArcGIS%E7%9A%84%E7%BB%93%E5%90%88/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://peacejiang.github.io/2023/06/09/ArcGIS-Pro-三维数据可视化/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="舆地纪要">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="舆地纪要">
-    <meta itemprop="description" content="从地表的痕迹去摸索时空的演化">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/06/09/ArcGIS-Pro-%E4%B8%89%E7%BB%B4%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"  itemprop="url">
-        ArcGIS Pro 三维数据可视化
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        数据数据源为上海市局部建筑面数据，通过区域汇总得到建筑面的格网数据，属性值代表格网内建筑的平均楼层高度（不代表绝对高度），分级方式为自然间断点法，原数据如下图：
+  </article>
 
-三维可视化流程在视图-转换中选择转局部场景
 
-然后会弹出三维视图，三维视图左边会有两个图层组，3D图层组、2D图层组。转换后数据一开始在2D图层组，如果需要三维可视化需要拖入到3D图层组。同时，也可以在2D图层组中加入底图数据，如...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg">
-            <meta itemprop="name" content="南河三">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-06-09T20:46:57+08:00">2023-06-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/3S%E6%8A%80%E6%9C%AF/">3S技术</a><span class="sep"></span><a class="category-link" href="/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/">GIS软件应用</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/3S%E6%8A%80%E6%9C%AF/" itemprop="url"><span itemprop="name">3S技术</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/" itemprop="url"><span itemprop="name">GIS软件应用</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/06/09/ArcGIS-Pro-%E4%B8%89%E7%BB%B4%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://peacejiang.github.io/2023/04/22/test-site/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="舆地纪要">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="舆地纪要">
-    <meta itemprop="description" content="从地表的痕迹去摸索时空的演化">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/04/22/test-site/"  itemprop="url">
-        test_site
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        测试写作功能这是编写的得一个网站
-123456import pandas as pdimport numpy as npimport arcpydata = pd.read(filepath)
-超链接写作结束！！！
-12345带 &#123;% u 下划线 %&#125; 的文本；带 &#123;% emp 着重号 %&#125; 的文本；带 &#123;% wavy 波浪线 %&#125;...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg">
-            <meta itemprop="name" content="南河三">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-04-22T11:14:18+08:00">2023-04-22</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/">博客测试</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/" itemprop="url"><span itemprop="name">博客测试</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/04/22/test-site/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
 
 
 </div>
@@ -3167,146 +3091,31 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-  
-  <section class="widget category desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/3S%E6%8A%80%E6%9C%AF/" href="/categories/3S%E6%8A%80%E6%9C%AF/"
-            active-action="action-categories3SE68A80E69CAF"
-            ><div class='name'>3S技术</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/" href="/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"
-            active-action="action-categories3SE68A80E69CAFGISE8BDAFE4BBB6E5BA94E794A8"
-            ><div class='name'>GIS软件应用</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/" href="/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/"
-            active-action="action-categoriesE58D9AE5AEA2E6B58BE8AF95"
-            ><div class='name'>博客测试</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"
-            active-action="action-categoriesE8AEA1E7AE97E69CBA"
-            ><div class='name'>计算机</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/"
-            active-action="action-categoriesE8AEA1E7AE97E69CBASQL"
-            ><div class='name'>SQL</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/ArcGIS/" style="font-size: 24px; color: #555">ArcGIS</a> <a href="/tags/Arcpy/" style="font-size: 14px; color: #999">Arcpy</a> <a href="/tags/SQL%E7%AC%94%E8%AE%B0/" style="font-size: 14px; color: #999">SQL笔记</a> <a href="/tags/VSCode/" style="font-size: 14px; color: #999">VSCode</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" style="font-size: 14px; color: #999">数据可视化</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 14px; color: #999">测试</a> <a href="/tags/%E8%84%9A%E6%9C%AC%E5%BC%80%E5%8F%91/" style="font-size: 14px; color: #999">脚本开发</a> <a href="/tags/%E8%B0%83%E6%95%B4/" style="font-size: 14px; color: #999">调整</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>4 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2023-08-08 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile">
-  
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/"><div class="item"><time>2023-08-08</time><span>计算机</span></div><span>SQL第一章：DDL数据定义语言</span></a></li><li><a class="widget-last" href="/2023/06/09/ArcGIS-Pro-%E4%B8%89%E7%BB%B4%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"><div class="item"><time>2023-08-03</time><span>3S技术</span></div><span>ArcGIS Pro 三维数据可视化</span></a></li><li><a class="widget-last" href="/2023/06/25/VSCode%E4%B8%8EArcGIS%E7%9A%84%E7%BB%93%E5%90%88/"><div class="item"><time>2023-08-03</time><span>3S技术</span></div><span>VSCode与ArcGIS的结合</span></a></li><li><a class="widget-last" href="/2023/04/22/test-site/"><div class="item"><time>2023-06-25</time><span>博客测试</span></div><span>test_site</span></a></li></ul>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E3%80%81%E4%BD%BF%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">数据库的增删改查、使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E8%A1%A8%E7%9A%84DDL"><span class="toc-number">2.</span> <span class="toc-text">操作表的DDL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95%E4%B8%AD%E7%9A%84%E5%88%97%E6%93%8D%E4%BD%9C"><span class="toc-number">3.</span> <span class="toc-text">表单中的列操作</span></a></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -3971,7 +3780,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"舆地纪要","url":"https://PeaceJiang.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"南河三","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/","sameAs":["https://github.com/volantis-x"],"description":"从地表的痕迹去摸索时空的演化"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://PeaceJiang.github.io/","name":"舆地纪要"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"舆地纪要","url":"https://PeaceJiang.github.io/","keywords":null,"description":"从地表的痕迹去摸索时空的演化","author":{"@type":"Person","name":"南河三","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/","description":"从地表的痕迹去摸索时空的演化"},"publisher":{"@type":"Organization","name":"舆地纪要","url":"https://PeaceJiang.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://PeaceJiang.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"从地表的痕迹去摸索时空的演化","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"南河三","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/"},"publisher":{"@type":"Organization","name":"舆地纪要","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"舆地纪要","url":"https://PeaceJiang.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"南河三","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/","sameAs":["https://github.com/volantis-x"],"description":"从地表的痕迹去摸索时空的演化"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://PeaceJiang.github.io/","name":"舆地纪要"}},{"@type":"ListItem","position":2,"item":{"@id":"https://PeaceJiang.github.io/categories/计算机/","name":"计算机"}},{"@type":"ListItem","position":2,"item":{"@id":"https://PeaceJiang.github.io/categories/计算机/SQL/","name":"SQL"}},{"@type":"ListItem","position":3,"item":{"@id":"https://PeaceJiang.github.io/2023/08/08/SQL第一章：DDL数据定义语言/","name":"SQL第一章：DDL数据定义语言"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"舆地纪要","url":"https://PeaceJiang.github.io/","keywords":null,"description":"从地表的痕迹去摸索时空的演化","author":{"@type":"Person","name":"南河三","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/","description":"从地表的痕迹去摸索时空的演化"},"publisher":{"@type":"Organization","name":"舆地纪要","url":"https://PeaceJiang.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://PeaceJiang.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SQL第一章：DDL数据定义语言","description":"数据定义语言（DDL）：Data Definition Language，用来定义数据库的对象，如数据表、视图、索引等。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://peacejiang.github.io/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/"},"author":{"@type":"Person","name":"南河三","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/"},"publisher":{"@type":"Organization","name":"舆地纪要","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://peacejiang.github.io/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/","wordCount":60,"datePublished":"2023-08-08T15:33:54.000Z","dateModified":"2023-08-08T15:40:59.397Z","articleSection":"计算机","keywords":"SQL笔记","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
