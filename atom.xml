@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>舆地纪要</title>
+  
+  
+  <link href="https://peacejiang.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://peacejiang.github.io/"/>
+  <updated>2023-08-03T11:23:24.804Z</updated>
+  <id>https://peacejiang.github.io/</id>
+  
+  <author>
+    <name>南河三</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VSCode与ArcGIS的结合</title>
+    <link href="https://peacejiang.github.io/2023/06/25/VSCode%E4%B8%8EArcGIS%E7%9A%84%E7%BB%93%E5%90%88/"/>
+    <id>https://peacejiang.github.io/2023/06/25/VSCode%E4%B8%8EArcGIS%E7%9A%84%E7%BB%93%E5%90%88/</id>
+    <published>2023-06-25T06:01:53.000Z</published>
+    <updated>2023-08-03T11:23:24.804Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>ArcGIS是常用的GIS桌面软件，其自带的arcpy包是使用Python开发常用的闭源站点包，因此若要使用arcpy则必须使用ArcGIS自带的python解释器。在ArcGIS for desktop中，ArcMap的python版本为2.7，为python2系列。随着新一代桌面端GIS软件ArcGIS Pro的推出，python3也以conda虚拟环境的形式结合到Pro中，本文介绍如何使用外部编辑器结合Pro中的python解释器来调用arcpy实现ArcGIS的python脚本开发。</p><hr><h2 id="软件说明"><a href="#软件说明" class="headerlink" title="软件说明"></a>软件说明</h2><p>软件版本：ArcGIS Pro 3.0版本、VSCode最新稳定版</p><hr><h2 id="操作流程"><a href="#操作流程" class="headerlink" title="操作流程"></a>操作流程</h2><h3 id="设定步骤"><a href="#设定步骤" class="headerlink" title="设定步骤"></a>设定步骤</h3><ol><li><p>首先找到ArcGIS Pro的安装目录，并找到python解释器所在的目录:\..\Pro\bin\Python\envs\arcgispro-py3\python.exe（默认路径），你也可以通过Pro中的包管理器新建一个python的虚拟环境（推荐）</p><p><img src="https://pic.imgdb.cn/item/64cb8a2a1ddac507cc0aaa55.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a2a1ddac507cc0aaa55.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="python路径"></p></li><li><p>在VSCode安装Python、jupyter等相关扩展（一般会推荐安装），随意打开目录并新建一个.py的文件，VSCode会自动选择默认的python解释器，若你的电脑并不带有python解释器，则需要通过手动选择目录的方式找到本地的解释器</p><p><img src="https://pic.imgdb.cn/item/64cb8a2b1ddac507cc0aaace.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a2b1ddac507cc0aaace.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="设置解释器"></p></li><li><p>点击后如果已识别到路径即可直接选择，如果未能识别可以通过文件管理来找到python解释器，如下图：</p><p><img src="https://pic.imgdb.cn/item/64cb8a2b1ddac507cc0aabe1.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a2b1ddac507cc0aabe1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="手动查找"></p></li></ol><h3 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h3><p>编写python脚本并测试运行结果，测试代码如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> arcpy</span><br><span class="line"></span><br><span class="line">arcpy.env.workspace = <span class="string">r&#x27;D:\DATA\全国矢量.gdb&#x27;</span></span><br><span class="line">arcpy.ListFeatureClasses()</span><br></pre></td></tr></table></figure><p>可以使用jupyter来执行python命令，选择Pro的python内核，执行命令如下：</p><p><img src="https://pic.imgdb.cn/item/64cb8a2b1ddac507cc0aac57.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a2b1ddac507cc0aac57.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="测试结果"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本文介绍了VSCode与ArcGIS Pro自带的Python解释器的运用，其他编辑器的使用方式同理，只要链接到Pro使用的Python解释器即可使用Pro所含有的arcpy、arcgis专属包。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;ArcGIS是常用的GIS桌面软件，其自带的arcpy包是使用Python开发常用的闭源站点包，因此若要使用arcpy则必须使用ArcGIS</summary>
+      
+    
+    
+    
+    <category term="3S技术" scheme="https://peacejiang.github.io/categories/3S%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="GIS软件应用" scheme="https://peacejiang.github.io/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="ArcGIS" scheme="https://peacejiang.github.io/tags/ArcGIS/"/>
+    
+    <category term="VSCode" scheme="https://peacejiang.github.io/tags/VSCode/"/>
+    
+    <category term="Arcpy" scheme="https://peacejiang.github.io/tags/Arcpy/"/>
+    
+    <category term="脚本开发" scheme="https://peacejiang.github.io/tags/%E8%84%9A%E6%9C%AC%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ArcGIS Pro 三维数据可视化</title>
+    <link href="https://peacejiang.github.io/2023/06/09/ArcGIS-Pro-%E4%B8%89%E7%BB%B4%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    <id>https://peacejiang.github.io/2023/06/09/ArcGIS-Pro-%E4%B8%89%E7%BB%B4%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</id>
+    <published>2023-06-09T12:46:57.000Z</published>
+    <updated>2023-08-03T11:27:05.599Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a><strong>数据</strong></h3><p>数据源为上海市局部建筑面数据，通过区域汇总得到建筑面的格网数据，属性值代表格网内建筑的平均楼层高度（不代表绝对高度），分级方式为自然间断点法，原数据如下图：</p><p><img src="https://pic.imgdb.cn/item/64cb8a271ddac507cc0aa139.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a271ddac507cc0aa139.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="原始数据分级展示"></p><h3 id="三维可视化流程"><a href="#三维可视化流程" class="headerlink" title="三维可视化流程"></a><strong>三维可视化流程</strong></h3><p>在视图-转换中选择转局部场景</p><p><img src="https://raw.githubusercontent.com/PeaceJiang/BlogImage/main/img/202306092056752.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/PeaceJiang/BlogImage/main/img/202306092056752.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="转换为场景"></p><p>然后会弹出三维视图，三维视图左边会有两个图层组，3D图层组、2D图层组。转换后数据一开始在2D图层组，如果需要三维可视化需要拖入到3D图层组。同时，也可以在2D图层组中加入底图数据，如下图：</p><p><img src="https://pic.imgdb.cn/item/64cb8a271ddac507cc0aa21f.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a271ddac507cc0aa21f.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="设定地图"></p><p>调整图层参数，在高程选项卡中设定拉伸类型为“绝对高度”，按照“MEAN_floor”字段，为了美观，将单位选择为千米。同时在符号系统中将轮廓设定为0</p><p><img src="https://pic.imgdb.cn/item/64cb8a281ddac507cc0aa519.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a281ddac507cc0aa519.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="设定高程"></p><p>修改图层色带为灰度拉伸，调整透明度为60%（可以按照后期效果调整），设置好三维图的底座</p><p><img src="https://pic.imgdb.cn/item/64cb8a291ddac507cc0aa767.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a291ddac507cc0aa767.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="设定底座"></p><p>从数据目录中再次加入该图层，然后按照下图进行设置</p><p><img src="https://pic.imgdb.cn/item/64cb8a2a1ddac507cc0aa85e.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a2a1ddac507cc0aa85e.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="设定图示"></p><p>修改图层的符号系统，用自然间断点进行显示，符号的轮廓设为0</p><p><img src="https://pic.imgdb.cn/item/64cb8a291ddac507cc0aa803.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a291ddac507cc0aa803.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="设定顶部色彩"></p><p>最后成果图如下所示：</p><p><img src="https://pic.imgdb.cn/item/64cb8a2a1ddac507cc0aa99f.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a2a1ddac507cc0aa99f.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="最终效果"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;数据&quot;&gt;&lt;a href=&quot;#数据&quot; class=&quot;headerlink&quot; title=&quot;数据&quot;&gt;&lt;/a&gt;&lt;strong&gt;数据&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;数据源为上海市局部建筑面数据，通过区域汇总得到建筑面的格网数据，属性值代表格网内建筑的平均楼层高度（不代表</summary>
+      
+    
+    
+    
+    <category term="3S技术" scheme="https://peacejiang.github.io/categories/3S%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="GIS软件应用" scheme="https://peacejiang.github.io/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="ArcGIS" scheme="https://peacejiang.github.io/tags/ArcGIS/"/>
+    
+    <category term="数据可视化" scheme="https://peacejiang.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test_site</title>
+    <link href="https://peacejiang.github.io/2023/04/22/test-site/"/>
+    <id>https://peacejiang.github.io/2023/04/22/test-site/</id>
+    <published>2023-04-22T03:14:18.000Z</published>
+    <updated>2023-06-25T12:45:36.190Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="测试写作功能"><a href="#测试写作功能" class="headerlink" title="测试写作功能"></a>测试写作功能</h3><p>这是编写的得一个网站</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> arcpy</span><br><span class="line"></span><br><span class="line">data = pd.read(filepath)</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><a href="https://github.com/">超链接</a><br>写作结束！！！</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">带 &#123;% u 下划线 %&#125; 的文本；带 &#123;% emp 着重号 %&#125; 的文本；带 &#123;% wavy 波浪线 %&#125; 的文本；带 &#123;% del 删除线 %&#125; 的文本</span><br><span class="line"></span><br><span class="line">键盘样式的文本：&#123;% kbd ⌘ %&#125; + &#123;% kbd D %&#125;</span><br><span class="line"></span><br><span class="line">密码样式的文本：&#123;% psw 这里没有验证码 %&#125;</span><br></pre></td></tr></table></figure><p>带 <u>下划线</u> 的文本；带 <emp>着重号</emp> 的文本；带 <wavy>波浪线</wavy> 的文本；带 <del>删除线</del> 的文本</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;测试写作功能&quot;&gt;&lt;a href=&quot;#测试写作功能&quot; class=&quot;headerlink&quot; title=&quot;测试写作功能&quot;&gt;&lt;/a&gt;测试写作功能&lt;/h3&gt;&lt;p&gt;这是编写的得一个网站&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table</summary>
+      
+    
+    
+    
+    <category term="博客测试" scheme="https://peacejiang.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="调整" scheme="https://peacejiang.github.io/tags/%E8%B0%83%E6%95%B4/"/>
+    
+    <category term="测试" scheme="https://peacejiang.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+</feed>
