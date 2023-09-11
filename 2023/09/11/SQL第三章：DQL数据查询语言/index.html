@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://PeaceJiang.github.io/archives/2023/"/>
+  
+  <link rel="canonical" href="https://PeaceJiang.github.io/2023/09/11/sql第三章：dql数据查询语言/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,18 +35,21 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="舆地纪要" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>归档：2023 - 舆地纪要</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="从地表的痕迹去摸索时空的演化 - 南河三 - 舆地纪要">
+  <title>SQL第三章：DQL数据查询语言 - 舆地纪要</title>
+  <meta name="keywords" content="SQL笔记,null">
+  <meta desc name="description" content="DQL：Data Query Language，用来查询数据库中的数据。 - 南河三 - 舆地纪要">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="舆地纪要">
-<meta property="og:url" content="https://peacejiang.github.io/archives/2023/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SQL第三章：DQL数据查询语言">
+<meta property="og:url" content="https://peacejiang.github.io/2023/09/11/SQL%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9ADQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/index.html">
 <meta property="og:site_name" content="舆地纪要">
-<meta property="og:description" content="从地表的痕迹去摸索时空的演化">
+<meta property="og:description" content="DQL：Data Query Language，用来查询数据库中的数据。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-09-11T15:15:47.000Z">
+<meta property="article:modified_time" content="2023-09-11T15:24:32.231Z">
 <meta property="article:author" content="南河三">
+<meta property="article:tag" content="SQL笔记">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2223,7 +2226,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2687,31 +2690,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://peacejiang.github.io/2023/09/11/SQL第三章：DQL数据查询语言/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="舆地纪要">
@@ -2721,449 +2700,375 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="从地表的痕迹去摸索时空的演化">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/09/11/SQL%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9ADQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         SQL第三章：DQL数据查询语言
-      </a>
-    </h2>
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg" class="lazyload" data-srcset="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">南河三</p>
+  </a>
+</div>
+
+          
+        
+          
+            
   
-  <div class='md article-desc' itemprop="articleBody">
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a><span class="sep"></span><a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/">SQL</a>
     
-      <p>DQL：Data Query Language，用来查询数据库中的数据。</p>
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url"><span itemprop="name">计算机</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/" itemprop="url"><span itemprop="name">SQL</span></a>
+      </span>
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg">
-            <meta itemprop="name" content="南河三">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-09-11T23:15:47+08:00">2023-09-11</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a><span class="sep"></span><a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/">SQL</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url"><span itemprop="name">计算机</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/" itemprop="url"><span itemprop="name">SQL</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/09/11/SQL%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9ADQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-09-11T23:15:47+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年9月11日</p>
+  </a>
 </div>
 
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-11T23:24:32+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年9月11日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：1.4k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：5 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span data-path="/2023/09/11/SQL%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9ADQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/" class="waline-pageview-count">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>DQL：Data Query Language，用来查询数据库中的数据。</p>
+<span id="more"></span>
+
+<h3 id="单表查询"><a href="#单表查询" class="headerlink" title="单表查询"></a>单表查询</h3><p><strong>简单查询</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 查询表中的所有数据</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student;</span><br><span class="line"><span class="keyword">Select</span> id,name,age,sex,address <span class="keyword">from</span> student; # 列出所有字段</span><br><span class="line"></span><br><span class="line"># 指定列查询</span><br><span class="line"><span class="keyword">Select</span> id,name <span class="keyword">from</span> student; # 列出需要查询的字段</span><br><span class="line"></span><br><span class="line"># 别名查询（在查询时，给查询的列或表起一个其他的（一般是稍短的名字，或为了防止重复）名字就叫做别名。使用别名的好处是方便查看和处理查询到的数据。）</span><br><span class="line"><span class="keyword">SELECT</span> 字段名<span class="number">1</span> <span class="keyword">AS</span> 别名, 字段名<span class="number">2</span> <span class="keyword">AS</span> 别名... <span class="keyword">FROM</span> 表名;</span><br><span class="line"><span class="keyword">SELECT</span> NAME <span class="keyword">AS</span> <span class="string">&#x27;姓名&#x27;</span>, age <span class="keyword">AS</span> <span class="string">&#x27;年龄&#x27;</span> <span class="keyword">FROM</span> student; # 设定别名并查询</span><br></pre></td></tr></table></figure>
+
+<aside>
+💡 别名查询注意事项
+
+<ul>
+<li>查询时给表取别名目前还看不到效果，需要到多表查询的时候才能体现出其好处。</li>
+<li>AS关键字可以省略。</aside></li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 查询并去除重复记录</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> 字段名 <span class="keyword">FROM</span> 表名</span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> name,age,address <span class="keyword">FROM</span> student # 去除选择字段均相同的重复记录</span><br></pre></td></tr></table></figure>
+
+<aside>
+💡 查询去重：
+查询去重并不会改变原表的数据，仅仅会提取原表中选择字段的非重复数据
+
+</aside>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 查询结果参与运算（<span class="operator">+</span> <span class="operator">-</span> <span class="operator">*</span> <span class="operator">/</span>）</span><br><span class="line"># 在查询语句中，查询的列的可以和其他值做数学运算(加、减、乘、除等)。运算结果只会影响展示，不会影响表中的数据。</span><br><span class="line"><span class="keyword">SELECT</span> 列名<span class="number">1</span> <span class="operator">+</span> 固定值 <span class="keyword">FROM</span> 表名</span><br><span class="line"><span class="keyword">SELECT</span> 列名<span class="number">1</span> <span class="operator">+</span> 列名<span class="number">2</span> <span class="keyword">FROM</span> 表名</span><br></pre></td></tr></table></figure>
+
+<h3 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h3><p><strong>运算符</strong></p>
+<p>在查询条件中，可以使用多种比较运算符来表示查询条件。<br>&#x3D; 等于，&gt; 大于，&lt;小于，&lt;&#x3D;小于等于，&gt;&#x3D;大于等于， &lt;&gt;或!&#x3D;不等于</p>
+<p><strong>逻辑运算符</strong></p>
+<p>and(&amp;&amp;) 多个条件同时满足<br>or(||) 多个条件其中一个满足<br>not(!) 不满足</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 查询age大于<span class="number">35</span>或性别为男的学生(两个条件其中一个满足)</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student <span class="keyword">WHERE</span> age<span class="operator">&gt;</span><span class="number">35</span> <span class="keyword">OR</span> sex<span class="operator">=</span><span class="string">&#x27;男&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>指定范围内查询 in</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> 字段名 <span class="keyword">FROM</span> 表名 <span class="keyword">WHERE</span> 字段 <span class="keyword">in</span> (数据<span class="number">1</span>, 数据<span class="number">2.</span>..); # <span class="keyword">in</span>里面的每个数据都会作为一次条件，只要满足条件的就会显示。</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student <span class="keyword">WHERE</span> id <span class="keyword">IN</span> (<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>); # 这里的<span class="keyword">IN</span> 相当于将<span class="keyword">OR</span>条件的连接 <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student <span class="keyword">WHERE</span> id<span class="operator">=</span><span class="number">1</span> <span class="keyword">OR</span> id<span class="operator">=</span><span class="number">3</span> <span class="keyword">OR</span> id<span class="operator">=</span><span class="number">5</span>; </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>模糊查询</strong></p>
+<p>MySQL通配符有两个：</p>
+<ul>
+<li>%: 表示0个或多个字符(任意个字符)</li>
+<li>_: 表示一个字符</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 模糊查询姓马的学生</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student <span class="keyword">WHERE</span> NAME <span class="keyword">LIKE</span> <span class="string">&#x27;马%&#x27;</span>;</span><br><span class="line"># 查询姓马，且姓名有三个字的学生</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student3 <span class="keyword">WHERE</span> NAME <span class="keyword">LIKE</span> <span class="string">&#x27;马__&#x27;</span>;</span><br><span class="line"></span><br><span class="line"># 查询姓名中包含<span class="string">&#x27;德&#x27;</span>字的学生</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student3 <span class="keyword">WHERE</span> NAME <span class="keyword">LIKE</span> <span class="string">&#x27;%德%&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>空值查询</strong></p>
+<p>查询某个字段为空（null）的数据，不是使用&#x3D;null（null和任何值都不相等），而是使用is null来进行判断。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 查询english成绩为<span class="keyword">null</span>的学生信息</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student <span class="keyword">WHERE</span> english <span class="keyword">IS</span> <span class="keyword">NULL</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><p>通过ORDER BY子句，可以将查询出的结果进行排序，排序只影响显示结果，不会影响数据库中数据的顺序。</p>
+<p><strong>单列排序</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">SELECT 字段名 FROM 表名 [WHERE 条件] ORDER BY 字段名 [ASC|DESC]; </span></span><br><span class="line"><span class="comment">ASC: 升序，默认是升序 </span></span><br><span class="line"><span class="comment">DESC: 降序</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"># 查询所有数据，使用年龄降序排序：</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student3 <span class="keyword">ORDER</span> <span class="keyword">BY</span> age <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>组合排序</strong></p>
+<p>组合排序就是先按第一个字段进行排序，如果第一个字段相同，才按第二个字段进行排序，依次类推。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> 字段名 <span class="keyword">FROM</span> 表名 [<span class="keyword">WHERE</span> 条件] <span class="keyword">ORDER</span> <span class="keyword">BY</span> 字段名<span class="number">1</span> [<span class="keyword">ASC</span><span class="operator">|</span><span class="keyword">DESC</span>],字段名<span class="number">2</span> [<span class="keyword">ASC</span><span class="operator">|</span><span class="keyword">DESC</span>];</span><br><span class="line"></span><br><span class="line"># 查询所有数据，在年龄降序排序的基础上，如果年龄相同再以数学成绩降序排序：</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> student3 <span class="keyword">ORDER</span> <span class="keyword">BY</span> age <span class="keyword">DESC</span>, math <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p><strong>单行函数</strong>：是指对于每一行数据进行计算后得到一行输出结果。SQL单行函数根据数据类型分为字符函数、数字函数、日期函数、转换函数等。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">ABS</span>(<span class="number">-1</span>) <span class="comment">-- 返回 x 的绝对值,返回1</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">CEIL</span>(<span class="number">1.5</span>) <span class="comment">-- 返回大于或等于 x 的最小整数（向上取整）返回2</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">FLOOR</span>(<span class="number">1.5</span>) <span class="comment">-- 返回小于或等于 x 的最大整数（向下取整）返回1</span></span><br><span class="line"><span class="keyword">SELECT</span> RAND() <span class="comment">--返回 0 到 1 的随机数0.93099315644334</span></span><br><span class="line"><span class="keyword">SELECT</span> ROUND(<span class="number">1.23456</span>) <span class="comment">--四舍五入取整，返回1</span></span><br><span class="line"><span class="keyword">SELECT</span> CONCAT(&quot;SQL &quot;, &quot;Runoob &quot;, &quot;Google &quot;, &quot;Facebook&quot;) <span class="keyword">AS</span> ConcatenatedString; <span class="comment">--合并字符串</span></span><br><span class="line"><span class="keyword">SELECT</span> LOCATE(<span class="string">&#x27;st&#x27;</span>,<span class="string">&#x27;myteststring&#x27;</span>); <span class="comment">-- 返回字符串a在字符串b中的位置，5</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">LOWER</span>(<span class="string">&#x27;RUNOOB&#x27;</span>) <span class="comment">-- 所有字母变小写 runoob</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">UPPER</span>(&quot;runoob&quot;); <span class="comment">-- 所有字母变大写 RUNOOB</span></span><br><span class="line"><span class="keyword">SELECT</span> REPLACE(<span class="string">&#x27;abc&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;x&#x27;</span>) <span class="comment">--字符串替换 xbc</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">SUBSTRING</span>(&quot;RUNOOB&quot;, <span class="number">2</span>, <span class="number">3</span>) <span class="keyword">AS</span> ExtractString; <span class="comment">-- 字符串切片 UNO</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">TRIM</span>(<span class="string">&#x27; RUNOOB &#x27;</span>) <span class="keyword">AS</span> TrimmedString; <span class="comment">-- 去除字符串前后多余的空格&#x27;RUNOOB&#x27;</span></span><br><span class="line"><span class="keyword">SELECT</span> reverse(<span class="string">&#x27;dog&#x27;</span>); <span class="comment">-- 反转字符串，返回god</span></span><br><span class="line"><span class="keyword">SELECT</span> now(); <span class="comment">-- 返回当前系统时间</span></span><br><span class="line"><span class="keyword">SELECT</span> sysdate(); <span class="comment">-- 返回当前系统时间,(包括年月日时分秒)</span></span><br><span class="line"><span class="keyword">SELECT</span> curdate(); <span class="comment">-- 返回当前日期(年月日)</span></span><br><span class="line"><span class="keyword">SELECT</span> curtime(); <span class="comment">-- 返回当前时间(时分秒)</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">MONTH</span>(<span class="string">&#x27;2020-11-12&#x27;</span>); <span class="comment">-- 返回参数中的月份</span></span><br><span class="line"><span class="keyword">SELECT</span> WEEK(<span class="string">&#x27;2020-11-12&#x27;</span>); <span class="comment">-- 返回参数日期是一年中的第几个星期</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DAY</span>(<span class="string">&#x27;2020-11-12&#x27;</span>); <span class="comment">-- 返回参数中的日值</span></span><br><span class="line"><span class="keyword">SELECT</span> DATE_ADD(<span class="string">&#x27;2020-11-12 12:11:22&#x27;</span>,<span class="type">interval</span> <span class="number">3</span> <span class="keyword">MONTH</span>) # date_add(<span class="type">date</span>,<span class="type">INTERVAL</span> expr type)<span class="type">date</span> 参数是合法的日期表达式。expr 参数是您希望添加的时间间隔。</span><br><span class="line"><span class="comment">/*type 参数可以是下列值：MICROSECOND</span></span><br><span class="line"><span class="comment">SECOND</span></span><br><span class="line"><span class="comment">MINUTE</span></span><br><span class="line"><span class="comment">HOUR</span></span><br><span class="line"><span class="comment">DAY</span></span><br><span class="line"><span class="comment">WEEK</span></span><br><span class="line"><span class="comment">MONTH</span></span><br><span class="line"><span class="comment">QUARTER</span></span><br><span class="line"><span class="comment">YEAR</span></span><br><span class="line"><span class="comment">SECOND_MICROSECOND</span></span><br><span class="line"><span class="comment">MINUTE_MICROSECOND</span></span><br><span class="line"><span class="comment">MINUTE_SECOND</span></span><br><span class="line"><span class="comment">HOUR_MICROSECOND</span></span><br><span class="line"><span class="comment">HOUR_SECOND</span></span><br><span class="line"><span class="comment">HOUR_MINUTE</span></span><br><span class="line"><span class="comment">DAY_MICROSECOND</span></span><br><span class="line"><span class="comment">DAY_SECOND</span></span><br><span class="line"><span class="comment">DAY_MINUTE</span></span><br><span class="line"><span class="comment">DAY_HOUR</span></span><br><span class="line"><span class="comment">YEAR_MONTH*/</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>流程控制函数</strong></p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+        
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fa-solid fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="\2023\08\08\SQL第一章：DDL数据定义语言\" title="SQL第一章：DDL数据定义语言" rel="bookmark "><span class="title">SQL第一章：DDL数据定义语言</span><span class="excerpt">数据定义语言（DDL）：Data Definition Language，用来定义数据库的对象，如数据表、视图、索引等。</span></a><a class="item" href="\2023\09\11\SQL第二章：DML数据操纵语言\" title="SQL第二章：DML数据操纵语言" rel="bookmark "><span class="title">SQL第二章：DML数据操纵语言</span><span class="excerpt">DML: Data Manipulation Language，用来在数据库表中更新，增加和删除记录。</span></a></div></section></div>
+      
+      <!-- 版权声明组件 -->
+      
+        
+          
+          <div class="copyright license">
+            <div class="license-title">SQL第三章：DQL数据查询语言</div>
+            <div class="license-link"><a href="https://peacejiang.github.io/2023/09/11/SQL第三章：DQL数据查询语言/">https://peacejiang.github.io/2023/09/11/SQL第三章：DQL数据查询语言/</a>
+            </div>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">南河三</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2023年9月11日</div>
+              </div>
+              
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh#" target="_blank">CC BY-NC-SA 4.0</a></div>
+              </div>
+            </div>
+            <div class="license-statement">博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</div>
           </div>
         
       
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://peacejiang.github.io/2023/09/11/SQL第二章：DML数据操纵语言/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="舆地纪要">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="舆地纪要">
-    <meta itemprop="description" content="从地表的痕迹去摸索时空的演化">
-  </span>
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-11T23:24:32+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年9月11日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
   
   
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SQL%E7%AC%94%E8%AE%B0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>SQL笔记</p></a></div>
+  <span hidden itemprop="keywords">SQL笔记</span>
+  
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://peacejiang.github.io/2023/09/11/SQL%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9ADQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/&title=SQL第三章：DQL数据查询语言 - 舆地纪要&summary=DQL：Data Query Language，用来查询数据库中的数据。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://peacejiang.github.io/2023/09/11/SQL%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9ADQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/&title=SQL第三章：DQL数据查询语言 - 舆地纪要&summary=DQL：Data Query Language，用来查询数据库中的数据。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://peacejiang.github.io/2023/09/11/SQL%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9ADQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/&title=SQL第三章：DQL数据查询语言 - 舆地纪要&summary=DQL：Data Query Language，用来查询数据库中的数据。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://peacejiang.github.io/2023/09/11/SQL%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9ADQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/&text=SQL第三章：DQL数据查询语言 - 舆地纪要"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/09/11/SQL%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9ADML%E6%95%B0%E6%8D%AE%E6%93%8D%E7%BA%B5%E8%AF%AD%E8%A8%80/'>
+          <p class='title'>SQL第二章：DML数据操纵语言<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>DML: Data Manipulation Language，用来在数据库表中更新，增加和删除记录。
+
+
+插入数据表中的记录12# 插入记录INSERT INTO student (id, n...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2023/09/11/SQL%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9ADQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/09/11/SQL%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9ADML%E6%95%B0%E6%8D%AE%E6%93%8D%E7%BA%B5%E8%AF%AD%E8%A8%80/"  itemprop="url">
-        SQL第二章：DML数据操纵语言
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>DML: Data Manipulation Language，用来在数据库表中更新，增加和删除记录。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg">
-            <meta itemprop="name" content="南河三">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-09-11T23:13:50+08:00">2023-09-11</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a><span class="sep"></span><a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/">SQL</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url"><span itemprop="name">计算机</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/" itemprop="url"><span itemprop="name">SQL</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/09/11/SQL%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9ADML%E6%95%B0%E6%8D%AE%E6%93%8D%E7%BA%B5%E8%AF%AD%E8%A8%80/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://peacejiang.github.io/2023/08/08/SQL第一章：DDL数据定义语言/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="舆地纪要">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="舆地纪要">
-    <meta itemprop="description" content="从地表的痕迹去摸索时空的演化">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/"  itemprop="url">
-        SQL第一章：DDL数据定义语言
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>数据定义语言（DDL）：Data Definition Language，用来定义数据库的对象，如数据表、视图、索引等。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg">
-            <meta itemprop="name" content="南河三">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-08T23:33:54+08:00">2023-08-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a><span class="sep"></span><a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/">SQL</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url"><span itemprop="name">计算机</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/" itemprop="url"><span itemprop="name">SQL</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://peacejiang.github.io/2023/06/25/VSCode与ArcGIS的结合/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="舆地纪要">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="舆地纪要">
-    <meta itemprop="description" content="从地表的痕迹去摸索时空的演化">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/06/25/VSCode%E4%B8%8EArcGIS%E7%9A%84%E7%BB%93%E5%90%88/"  itemprop="url">
-        VSCode与ArcGIS的结合
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        前言ArcGIS是常用的GIS桌面软件，其自带的arcpy包是使用Python开发常用的闭源站点包，因此若要使用arcpy则必须使用ArcGIS自带的python解释器。在ArcGIS for desktop中，ArcMap的python版本为2.7，为python2系列。随着新一代桌面端GIS软件ArcGIS Pro的推出，python3也以conda虚拟环境的形式结合到Pro中，本文介绍...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg">
-            <meta itemprop="name" content="南河三">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-06-25T14:01:53+08:00">2023-06-25</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/3S%E6%8A%80%E6%9C%AF/">3S技术</a><span class="sep"></span><a class="category-link" href="/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/">GIS软件应用</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/3S%E6%8A%80%E6%9C%AF/" itemprop="url"><span itemprop="name">3S技术</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/" itemprop="url"><span itemprop="name">GIS软件应用</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/06/25/VSCode%E4%B8%8EArcGIS%E7%9A%84%E7%BB%93%E5%90%88/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://peacejiang.github.io/2023/06/09/ArcGIS-Pro-三维数据可视化/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="舆地纪要">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="舆地纪要">
-    <meta itemprop="description" content="从地表的痕迹去摸索时空的演化">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/06/09/ArcGIS-Pro-%E4%B8%89%E7%BB%B4%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"  itemprop="url">
-        ArcGIS Pro 三维数据可视化
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        数据数据源为上海市局部建筑面数据，通过区域汇总得到建筑面的格网数据，属性值代表格网内建筑的平均楼层高度（不代表绝对高度），分级方式为自然间断点法，原数据如下图：
-
-三维可视化流程在视图-转换中选择转局部场景
-
-然后会弹出三维视图，三维视图左边会有两个图层组，3D图层组、2D图层组。转换后数据一开始在2D图层组，如果需要三维可视化需要拖入到3D图层组。同时，也可以在2D图层组中加入底图数据，如...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg">
-            <meta itemprop="name" content="南河三">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-06-09T20:46:57+08:00">2023-06-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/3S%E6%8A%80%E6%9C%AF/">3S技术</a><span class="sep"></span><a class="category-link" href="/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/">GIS软件应用</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/3S%E6%8A%80%E6%9C%AF/" itemprop="url"><span itemprop="name">3S技术</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/" itemprop="url"><span itemprop="name">GIS软件应用</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/06/09/ArcGIS-Pro-%E4%B8%89%E7%BB%B4%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://peacejiang.github.io/2023/04/22/test-site/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="舆地纪要">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="舆地纪要">
-    <meta itemprop="description" content="从地表的痕迹去摸索时空的演化">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/04/22/test-site/"  itemprop="url">
-        test_site
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        测试写作功能这是编写的得一个网站
-123456import pandas as pdimport numpy as npimport arcpydata = pd.read(filepath)
-超链接写作结束！！！
-12345带 &#123;% u 下划线 %&#125; 的文本；带 &#123;% emp 着重号 %&#125; 的文本；带 &#123;% wavy 波浪线 %&#125;...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://pic.imgdb.cn/item/64cb8a261ddac507cc0aa013.jpg">
-            <meta itemprop="name" content="南河三">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-04-22T11:14:18+08:00">2023-04-22</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/">博客测试</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/" itemprop="url"><span itemprop="name">博客测试</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/04/22/test-site/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3244,146 +3149,31 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-  
-  <section class="widget category desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/3S%E6%8A%80%E6%9C%AF/" href="/categories/3S%E6%8A%80%E6%9C%AF/"
-            active-action="action-categories3SE68A80E69CAF"
-            ><div class='name'>3S技术</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/" href="/categories/3S%E6%8A%80%E6%9C%AF/GIS%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"
-            active-action="action-categories3SE68A80E69CAFGISE8BDAFE4BBB6E5BA94E794A8"
-            ><div class='name'>GIS软件应用</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/" href="/categories/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/"
-            active-action="action-categoriesE58D9AE5AEA2E6B58BE8AF95"
-            ><div class='name'>博客测试</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"
-            active-action="action-categoriesE8AEA1E7AE97E69CBA"
-            ><div class='name'>计算机</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/SQL/"
-            active-action="action-categoriesE8AEA1E7AE97E69CBASQL"
-            ><div class='name'>SQL</div><div class='badge'>(3)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/ArcGIS/" style="font-size: 19px; color: #777">ArcGIS</a> <a href="/tags/Arcpy/" style="font-size: 14px; color: #999">Arcpy</a> <a href="/tags/SQL%E7%AC%94%E8%AE%B0/" style="font-size: 24px; color: #555">SQL笔记</a> <a href="/tags/VSCode/" style="font-size: 14px; color: #999">VSCode</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" style="font-size: 14px; color: #999">数据可视化</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 14px; color: #999">测试</a> <a href="/tags/%E8%84%9A%E6%9C%AC%E5%BC%80%E5%8F%91/" style="font-size: 14px; color: #999">脚本开发</a> <a href="/tags/%E8%B0%83%E6%95%B4/" style="font-size: 14px; color: #999">调整</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>6 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2023-09-11 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile">
-  
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2023/09/11/SQL%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9ADML%E6%95%B0%E6%8D%AE%E6%93%8D%E7%BA%B5%E8%AF%AD%E8%A8%80/"><div class="item"><time>2023-09-11</time><span>计算机</span></div><span>SQL第二章：DML数据操纵语言</span></a></li><li><a class="widget-last" href="/2023/09/11/SQL%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9ADQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/"><div class="item"><time>2023-09-11</time><span>计算机</span></div><span>SQL第三章：DQL数据查询语言</span></a></li><li><a class="widget-last" href="/2023/08/08/SQL%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9ADDL%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80/"><div class="item"><time>2023-08-08</time><span>计算机</span></div><span>SQL第一章：DDL数据定义语言</span></a></li><li><a class="widget-last" href="/2023/06/09/ArcGIS-Pro-%E4%B8%89%E7%BB%B4%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"><div class="item"><time>2023-08-03</time><span>3S技术</span></div><span>ArcGIS Pro 三维数据可视化</span></a></li><li><a class="widget-last" href="/2023/06/25/VSCode%E4%B8%8EArcGIS%E7%9A%84%E7%BB%93%E5%90%88/"><div class="item"><time>2023-08-03</time><span>3S技术</span></div><span>VSCode与ArcGIS的结合</span></a></li></ul>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E8%A1%A8%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.</span> <span class="toc-text">单表查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.</span> <span class="toc-text">条件查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F"><span class="toc-number">3.</span> <span class="toc-text">排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">函数</span></a></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -3391,6 +3181,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
         </div>
@@ -4047,7 +3838,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"舆地纪要","url":"https://PeaceJiang.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"南河三","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/","sameAs":["https://github.com/volantis-x"],"description":"从地表的痕迹去摸索时空的演化"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://PeaceJiang.github.io/","name":"舆地纪要"}},{"@type":"ListItem","position":2,"item":{"@id":"https://PeaceJiang.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://PeaceJiang.github.io/archives/2023/","name":"2023年"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"舆地纪要","url":"https://PeaceJiang.github.io/","keywords":null,"description":"从地表的痕迹去摸索时空的演化","author":{"@type":"Person","name":"南河三","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/","description":"从地表的痕迹去摸索时空的演化"},"publisher":{"@type":"Organization","name":"舆地纪要","url":"https://PeaceJiang.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://PeaceJiang.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"从地表的痕迹去摸索时空的演化","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"南河三","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/"},"publisher":{"@type":"Organization","name":"舆地纪要","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"舆地纪要","url":"https://PeaceJiang.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"南河三","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/","sameAs":["https://github.com/volantis-x"],"description":"从地表的痕迹去摸索时空的演化"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://PeaceJiang.github.io/","name":"舆地纪要"}},{"@type":"ListItem","position":2,"item":{"@id":"https://PeaceJiang.github.io/categories/计算机/","name":"计算机"}},{"@type":"ListItem","position":2,"item":{"@id":"https://PeaceJiang.github.io/categories/计算机/SQL/","name":"SQL"}},{"@type":"ListItem","position":3,"item":{"@id":"https://PeaceJiang.github.io/2023/09/11/SQL第三章：DQL数据查询语言/","name":"SQL第三章：DQL数据查询语言"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"舆地纪要","url":"https://PeaceJiang.github.io/","keywords":null,"description":"从地表的痕迹去摸索时空的演化","author":{"@type":"Person","name":"南河三","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/","description":"从地表的痕迹去摸索时空的演化"},"publisher":{"@type":"Organization","name":"舆地纪要","url":"https://PeaceJiang.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://PeaceJiang.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SQL第三章：DQL数据查询语言","description":"DQL：Data Query Language，用来查询数据库中的数据。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://peacejiang.github.io/2023/09/11/SQL%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9ADQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/"},"author":{"@type":"Person","name":"南河三","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://PeaceJiang.github.io/"},"publisher":{"@type":"Organization","name":"舆地纪要","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://peacejiang.github.io/2023/09/11/SQL%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9ADQL%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/","wordCount":36,"datePublished":"2023-09-11T15:15:47.000Z","dateModified":"2023-09-11T15:24:32.231Z","articleSection":"计算机","keywords":"SQL笔记","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
